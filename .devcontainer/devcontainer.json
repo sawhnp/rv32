@@ -1,0 +1,23 @@
+{
+    "name": "SystemVerilog Development",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "AndrewNolte.vscode-system-verilog",
+                "surfer-project.surfer"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "files.associations": {
+                    "*.sv": "systemverilog",
+                    "*.svh": "systemverilog"
+                }
+            }
+        }
+    },
+    "remoteUser": "root"
+}
